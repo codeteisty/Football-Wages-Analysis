@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Легкий синий цвет */
+            color: #333; /* Цвет текста */
+        }
+
+        header {
+            background-color: #4682b4; /* Цвет хедера */
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer {
+            background-color: #4682b4; /* Цвет футера */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .result-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .result-container h2 {
+            color: #4682b4; /* Цвет заголовка */
+        }
+
+        .result-container p {
+            line-height: 1.6em;
+        }
+
+        .result-container input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #4682b4; /* Цвет рамки для инпута */
+            border-radius: 5px;
+        }
+
+        .result-container button {
+            background-color: #4682b4; /* Цвет кнопки */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .result-container button:hover {
+            background-color: #357ebd; /* Измененный цвет кнопки при наведении */
+        }
+
+        .result-container .result {
+            color: #4682b4; /* Цвет результата */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="/home">Home</a>
+        <a href="/average_wages">Average wages</a>
+    </header>
+
+    <div class="result-container">
+        <form method="post">
+            <h2>Active Descriptive statistics</h2>
+            <p>
+                Select pandas function that will show analysis of my dataset
+            </p>
+            <input type="text" name="predict" placeholder="input" />
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+    <div class="result-container">
+        <p class="result">
+            {{result}}
+        </p>
+    </div>
+
+    <footer>
+        Made by Nikitony Podlednev
+    </footer>
+
+</body>
+
+</html>
+
+
