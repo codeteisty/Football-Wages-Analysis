@@ -4,7 +4,7 @@ import seaborn as sns
 import plotly.express as px
 from links import *
 
-df = pd.read_csv('pythonProject3/SalaryPrediction2.csv')
+df = pd.read_csv('SalaryPrediction2.csv')
 
 with st.sidebar:
     radio = st.radio(
