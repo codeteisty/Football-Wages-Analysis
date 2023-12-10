@@ -8,7 +8,7 @@ df = pd.read_csv('SalaryPrediction2.csv')
 
 with st.sidebar:
     radio = st.radio(
-        "Have you already predicted your football salary?",
+        "Have you already checked your nation's average football salary?",
         ("Not yet", "Yeap", "Men don't talk about their wage")
     )
 
